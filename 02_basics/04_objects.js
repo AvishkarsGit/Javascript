@@ -58,3 +58,15 @@ const obj3 = {...obj1, ...obj2}
 // console.log(Object.values(tinder));
 
 console.log(tinder.hasOwnProperty('isLoggedin'));
+
+
+const course = [ 
+    
+]
+
+//destructoring
+for (let i = 0;i<course.length;i++){
+    const { course_instructor: instructor } = course[i]
+    console.log(instructor);
+}
+

@@ -1,0 +1,27 @@
+body {
+    background-color: #212121;
+    color: #fff;
+}
+.container {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.container form p label {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.container form input{
+    border-radius: 6px;
+    margin-left: 20px;
+    padding: 10px;
+}
+.container form button{
+    height: 30px;
+    width: 130px;
+    background-color: #76eff5;
+    border-radius: 6px;
+    padding: 5px;
+}

@@ -12,6 +12,8 @@ h1 {
     width: 150px;
     height: 150px;
     margin: 10px;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 #grey{

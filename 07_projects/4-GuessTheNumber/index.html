@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Project 4</title>
+    <link rel="stylesheet" href="/07_projects/4-GuessTheNumber/guess.css">
+</head>
+<body>
+    <h2>Guess the number</h2>
+    <p>Enter a number between 1 to 100. If the guess is match with computer generated number. <br>Then you are win</p>
+    <div class="container">
+        <form>
+            <input type="text" placeholder="Enter number" id="userInput"><br>
+            <button class="button" id="submit">Submit</button>
+        </form>
+        <p id="prevGuess">Previous Guesses : <span> </span></p>
+        <p id="attempts">Attempts Remaining : <span class="prev"> 10 </span></p>
+        <h3 class="result"></h3>
+    </div>
+    <script src="/07_projects/4-GuessTheNumber/guess.js"></script>
+</body>
+</html>

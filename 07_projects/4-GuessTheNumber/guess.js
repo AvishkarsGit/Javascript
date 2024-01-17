@@ -86,7 +86,7 @@ function newGame(){
         previousGuess.innerHTML = ''
         remaining.innerHTML = `${11-numOfAttempts}`;
         userInput.removeAttribute('disabled')
-        div.removeChild(h2)
+        resultText.innerHTML = ''
         playGame = true;
     })
 }

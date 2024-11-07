@@ -1,10 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:"Geist",sans-serif;
 }
 
 body {
     background-color:#CBD2A4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    min-height: 45vh;
+    min-width: 40vh;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.container form input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #F5F7F8;
+    padding: 10px;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+.container .select-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:1.5rem;
+}
+
+.container .select-container select {
+    width: 10vh;
+    height: 4vh;
+    border: none;
+    background-color: #C4E1F6;
+    border-radius:6px;
+    padding-left: 5px;
+}
+.container #btn {
+    border: none;
+    outline: none;
+    background-color: #37AFE1;
+    width: 100%;
+    margin-top: 2.5rem;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.msg {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.85rem;
 }

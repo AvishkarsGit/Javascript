@@ -1,0 +1,136 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--roboto-font);
+}
+/* root css */
+:root {
+    --roboto-font : "Roboto", sans-serif;
+
+    /* color */
+    --primary:#C9E6F0;
+    --primary-variant:#8B5DFF;
+    --input-color:#EBEAFF;
+    --select-color:#FFF6E3;
+    --text-color:#314259;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+.heading {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 48px 0px;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.card-main {
+    background-color: #fff;
+    width: 680px;
+    padding: 3rem;
+    color: var(--text-color);
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px rgb(202, 201, 201);
+}
+.card-main p {
+        margin: 10px 0px;
+        font-size: 1rem;
+        font-weight: 500;
+}
+.card-main .rs-input-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(92, 92, 92) ;
+    border-radius: .3rem;
+    height: 45px;
+    margin: 10px 0px;
+}
+.card-main .rs-input-box .icon{
+    background-color: #EEEEEE;
+    width: 8%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-main .rs-input-box .icon i{
+    font-size: 1.3rem;
+}
+
+.card-main input,select {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: 1.2px solid rgb(92, 92, 92);
+    font-size: 1rem;
+    border-radius: .3rem;
+}
+.card-main .rs-input-box input{
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.card-main .calculate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.2rem 0px;
+    width: 100%;
+}
+.card-main .calculate button {
+    width: 100%;
+    height: 35px;
+    background-color: black;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.card-main .calculate button:hover{
+    background-color: var(--primary-variant);
+    cursor: pointer;
+}
+
+/* card result */
+.card-result {
+    background-color: #fff;
+    color: var(--text-color);
+    font-weight: 500;
+    border-radius: .4rem;
+    box-shadow: 0px 0px 5px rgb(202, 201, 201);
+}
+canvas {
+    margin: 1rem 0px;
+}
+ 
+.card-result .result .cost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.2rem 1rem;
+}
+
+.hr {
+    background-color: #b7b7b7;
+    height:1px;
+}

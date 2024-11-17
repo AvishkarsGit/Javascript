@@ -4,8 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loan Interest Calculator</title>
-</head>
+
+    <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- style.css -->
+    <link rel="stylesheet" href="/10_Projects_Final/Loan-Interest-Calculator/style.css">
+
+    <!-- boxicons -->
+     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+     
+    </head>
 <body>
+
+    <div class="heading">
+        <h2>Simple Interest Calculator</h2>
+    </div>
+    <div class="main">
+        <!-- main  -->
+        <div class="card-main">
+            <p>Principal Amount (Rs.)</p>
+            <div class="rs-input-box">
+                <div class="icon">
+                    <i class='bx bx-rupee'></i>
+                </div>
+                <input type="number" placeholder="Enter principle amount" value="10000" id="rs-input">
+            </div>
+            <p>Annual rate</p>
+            <input type="number" placeholder="Enter annual rate" value="10" id="rate-input">
+            <p>Period Unit</p>
     
+            <select id="period-select-input">
+                <option value="Days">Days</option>
+                <option value="Weeks">Weeks</option>
+                <option value="Months">Months</option>
+                <option value="Years" selected>Years</option>
+            </select>
+    
+            <p>Period Value</p>
+            <input type="number" placeholder="Enter period value e.g.(10)" value="4" id="period-value-input">
+
+            <div class="calculate">
+                <button id="calculate-btn">Calculate</button>
+            </div>
+
+        </div>
+
+        <!-- card result -->
+        <div class="card-result">
+            <canvas id="pie-chart" width="300" height="300"></canvas>
+            <div class="result">
+                <div class="cost">
+                    <p>Interest Earned</p>
+                    <span id="interest">₹83.33</span>
+                </div>
+                <div class="hr"></div>
+                <div class="cost">
+                    <p>Principle Amount</p>
+                    <span id="principle-amt">₹83.33</span>
+                </div>
+                <div class="hr"></div>
+                <div class="cost">
+                    <p>Total Value</p>
+                    <span id="total-value">₹83.33</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/10_Projects_Final/Loan-Interest-Calculator/app.js"></script>
+
 </body>
 </html>
